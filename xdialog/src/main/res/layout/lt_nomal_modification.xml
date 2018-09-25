@@ -1,0 +1,100 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_centerInParent="true"
+        android:background="@drawable/db_bg_white"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="86.5%">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3.5">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:text="温馨提示"
+                android:textColor="#38ADFF"
+                android:textSize="16sp"></TextView>
+
+            <EditText
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_weight="0.8"
+                android:background="@drawable/db_bg_edit"
+                android:gravity="center|left"
+                android:hint="昵称"
+                android:textColorHint="#7D7D7D"
+                android:textColor="#7D7D7D"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_weight="0.5"
+               />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#E4E4E4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/negativeButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="取消"
+                    android:textColor="#7D7D7D"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#E4E4E4" />
+
+                <Button
+                    android:id="@+id/positiveButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="确定"
+                    android:textColor="#38ADFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+</android.support.percent.PercentRelativeLayout>
